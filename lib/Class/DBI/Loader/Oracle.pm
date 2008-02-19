@@ -7,7 +7,7 @@ use Carp;
 require Class::DBI::Oracle;
 use base 'Class::DBI::Loader::Generic';
 use vars '$VERSION';
-$VERSION = '0.01';
+$VERSION = '0.02';
 
 sub _db_class { return 'Class::DBI::Oracle' }
 
@@ -28,7 +28,6 @@ sub _tables {
         # remove "user." (schema) prefixes
         $table =~ s/\w+\.//;
 
-        next if $table eq 'PLAN_TABLE';
         $table = lc $table;
         push @tables, $1
           if $table =~ /\A(\w+)\z/;
@@ -65,7 +64,9 @@ L<Class::DBI::Loader>, L<Class::DBI::Loader::Generic>
 
 =head1 TODO
 
-Add support for relationships.
+This module needs a new maintainer, because I no longer use L<Class::DBI> and
+have no further interest in maintaining this module. And yes, this includes the
+RT wishlist request for relationships support.
 
 =head1 BUGS
 
@@ -81,7 +82,7 @@ Special thanks to Frank Carnovale and Ian VanDerPoel for sharing their code, upo
 
 =head1 AUTHOR
 
-David Naughton, C<< <naughton@umn.edu> >>
+David Naughton, C<< <naughton@cpan.org> >>
 
 =head1 COPYRIGHT & LICENSE
 

@@ -1,4 +1,4 @@
-Class-DBI-Loader-Oracle version 0.01
+Class-DBI-Loader-Oracle version 0.02
 ====================================
 
 This module provides an Oracle driver for Class::DBI::Loader.

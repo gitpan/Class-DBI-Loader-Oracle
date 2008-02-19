@@ -4,7 +4,7 @@ use ExtUtils::MakeMaker;
 
 WriteMakefile(
     NAME                => 'Class::DBI::Loader::Oracle',
-    AUTHOR              => 'David Naughton <naughton@umn.edu>',
+    AUTHOR              => 'David Naughton <naughton@cpan.org>',
     VERSION_FROM        => 'lib/Class/DBI/Loader/Oracle.pm',
     ABSTRACT_FROM       => 'lib/Class/DBI/Loader/Oracle.pm',
     PL_FILES            => {},
